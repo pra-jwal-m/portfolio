@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prajwal M — Portfolio</title>
+  <meta name="description" content="Prajwal M — Information Science & Engineering graduate. Projects: SafeTrack (Accident detection). Skills: C, C++, Java, Python, Jenkins, Docker, Kubernetes, ML." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#6ee7b7; --muted:#94a3b8; --glass:rgba(255,255,255,0.03);
+      --max-width:1000px;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#061024 0%, #081224 60%);color:#e6eef6;display:flex;align-items:center;justify-content:center;padding:40px 20px;}
+    .wrap{width:100%;max-width:var(--max-width);}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .avatar{width:80px;height:80px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:#0b1220;flex-shrink:0}
+    .intro h1{margin:0;font-size:28px;letter-spacing:-0.5px}
+    .intro p{margin:6px 0 0;color:var(--muted)}
+    nav a{color:var(--muted);margin-left:20px;text-decoration:none;font-weight:500;transition:color .3s}
+    nav a:hover{color:var(--accent)}
+    .contact{margin-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+    .chip{background:var(--glass);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:14px}
+    main{display:grid;grid-template-columns:1fr 340px;gap:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    h2{margin:0 0 10px;font-size:18px}
+    .section p{color:var(--muted);margin:0 0 12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#081827;padding:8px 10px;border-radius:8px;font-size:13px;color:var(--muted)}
+    .project{border-left:3px solid rgba(110,231,183,0.08);padding-left:12px;margin-bottom:12px}
+    .project h3{margin:0;font-size:15px}
+    .project p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .right .small{font-size:13px;color:var(--muted)}
+    .edu-item{margin-bottom:10px}
+    .cta{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#60a5fa);color:#071129;text-decoration:none;font-weight:600}
+    footer{margin-top:22px;color:var(--muted);font-size:13px;text-align:center}
+    .resume-section{display:none;margin-top:30px}
+    .resume-section iframe{width:100%;height:800px;border:none;border-radius:12px}
+
+    @media (max-width:900px){main{grid-template-columns:1fr}.avatar{width:70px;height:70px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="avatar">PM</div>
+        <div class="intro">
+          <h1>Prajwal M</h1>
+          <p>Information Science & Engineering graduate • Passionate about ML, DevOps and building real-world solutions.</p>
+          <div class="contact">
+            <div class="chip">prajwalm1992003@gmail.com</div>
+            <div class="chip">+91 9108795749</div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a>
+        <a href="#resume" onclick="showSection('resume')">Resume</a>
+      </nav>
+    </header>
+
+    <section id="portfolio-section">
+      <main>
+        <section class="card">
+          <div class="section">
+            <h2>About</h2>
+            <p>A motivated Information Science & Engineering B.E graduate with a foundation in C, C++, Java and Python. I enjoy applying machine learning and DevOps tooling to build reliable, deployable systems that solve real-world problems.</p>
+          </div>
+
+          <div class="section">
+            <h2>Projects</h2>
+            <div class="project">
+              <h3>SafeTrack — Real-time Accident Detection & Emergency Response</h3>
+              <p>Developed a Flask-based web app that streams and analyses video frames in real time. Implemented preprocessing steps and a CNN-based frame classifier. Integrated a Telegram-based alert notification system to send emergency alerts when accidents are detected.</p>
+              <p class="small">Technologies: Python, Flask, OpenCV, TensorFlow/PyTorch (CNN), Telegram API.</p>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Courses & Certifications</h2>
+            <p>AI-DEVOPS — Rooman Technology, Bangalore. Focus: Jenkins, Docker, Kubernetes and implementing AI techniques in CI/CD pipelines.</p>
+          </div>
+
+          <div class="section">
+            <h2>Tools & Technologies</h2>
+            <div class="skills">
+              <div class="skill">C</div>
+              <div class="skill">C++</div>
+              <div class="skill">Java</div>
+              <div class="skill">Python</div>
+              <div class="skill">Jenkins</div>
+              <div class="skill">Docker</div>
+              <div class="skill">Kubernetes</div>
+              <div class="skill">Flask</div>
+              <div class="skill">OpenCV</div>
+              <div class="skill">Jupyter / Google Colab</div>
+              <div class="skill">MLflow</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Extracurriculars & Interests</h2>
+            <p class="small">Languages: English, Kannada · Sports: Cricket, Handball · Hobbies: Reading books, Listening to music.</p>
+          </div>
+        </section>
+
+        <aside class="card right">
+          <div class="section">
+            <h2>Education</h2>
+            <div class="edu-item">
+              <strong>B.E in Information Science & Engineering</strong>
+              <div class="small">P.E.S College, Mandya — CGPA: 6.00 (Passed out: 2025)</div>
+            </div>
+            <div class="edu-item">
+              <strong>Intermediate — PCMC</strong>
+              <div class="small">Sadvidya PU College, Mysuru — 92.8%</div>
+            </div>
+            <div class="edu-item">
+              <strong>Matriculate — CBSE</strong>
+              <div class="small">ST. Thomas School, Mysuru — 93.8%</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Achievements</h2>
+            <p class="small">Represented ST. Thomas High School at the Inter-Zone Handball Tournament (Visakhapatnam, Andhra Pradesh).</p>
+          </div>
+
+          <a class="cta" href="#resume" onclick="showSection('resume')">View Resume</a>
+        </aside>
+      </main>
+    </section>
+
+    <section id="resume-section" class="resume-section card">
+      <h2>Resume</h2>
+      <iframe src="prajwal_resume.pdf"></iframe>
+    </section>
+
+    <footer class="card">
+      <small>Built with ❤️ • Content taken from the uploaded resume (Prajwal M).</small>
+    </footer>
+  </div>
+
+  <script>
+    function showSection(section){
+      const portfolio = document.getElementById('portfolio-section');
+      const resume = document.getElementById('resume-section');
+      if(section==='resume'){
+        portfolio.style.display='none';
+        resume.style.display='block';
+      }else{
+        portfolio.style.display='block';
+        resume.style.display='none';
+      }
+    }
+  </script>
+</body>
+</html>
